@@ -68,7 +68,6 @@
   grid-row: 1;
   transition: 1.8s ease-in-out;
   opacity: 1;
-  z-index: 12;
 }
 
 .signup {
@@ -316,6 +315,7 @@ form.sign-up-form {
   .panels-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 1fr;
+    pointer-events: none;
   }
 
   .panel {
@@ -326,6 +326,7 @@ form.sign-up-form {
 
   .panel.left-panel, .panel.right-panel {
     grid-column: 1;
+    z-index: 13;
   }
 
   .panel.left-panel {
